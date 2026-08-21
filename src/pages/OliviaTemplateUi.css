@@ -1,0 +1,34 @@
+.olivia-cover {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: start; */
+  padding: 1rem;
+  background-image: url(../assets/olivia-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Cardo", serif;
+  z-index: 0;
+}
+
+.olivia-cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(173, 68, 120, 0.3);
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.mrs-saint {
+  font-family: "Mrs Saint Delafield", serif;
+}
